@@ -9,32 +9,7 @@
     <div id="game">
       <div id="dodger" style="bottom: 0px; left: 180px;"></div>
     </div>
-    <script>
-    const dodger = document.getElementById("dodger");
-document.addEventListener("keydown", function(e) {
-  if (e.which === 37) {
-    moveDodgerLeft();
-  }
-});
-document.addEventListener("keydown", function(e) {
-  if (e.which === 39) {
-    moveDodgerRight();
-  }
-});
-function moveDodgerLeft() {
-  const leftNumbers = dodger.style.left.replace("px", "");
-  const left = parseInt(leftNumbers, 10);
-  if (left > 0) {
-    dodger.style.left = `${left - 1}px`;
-  }
-}
-function moveDodgerRight() {
-  const rightNumbers = dodger.style.left.replace("px", "");
-  const left = parseInt(rightNumbers, 10);
-  if (left < 360) {
-    dodger.style.left = `${left + 1}px`;
-  }
-}
-</script>
+
+<script src="index.js"></script>
   </body>
 </html>
